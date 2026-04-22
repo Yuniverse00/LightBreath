@@ -1,0 +1,57 @@
+
+{
+    "items": [
+        {
+            "Question": "Where can I see stats about how much I've smoked and how much I've spent on cigarettes?",
+            "Answer": "Click on the “My Smoking Trends” page to keep track of how much you have smoked and how much money you have spent on cigarettes. See your total number of cigarettes smoked, total cash spent, and amount of times since your last smoke."
+        },
+        {
+            "Question": "How do I view the smoking graph to see how many cigarettes I’ve smoked this week?",
+            "Answer": "Click on the “My Smoking Trends” page and then click on the “Smoking” graph to view this information. You can also click on the “Cash Spent” graph on the same page to see exactly how much you’ve spent on the cigarettes that you smoked this week"
+        },
+        {
+            "Question": "How do I save my progress in the app?",
+            "Answer": "Every time there is a “Save changes” button, you must click “Save changes” before exiting the page, or all information will be lost."
+        },
+        {
+            "Question": "How do I return to the “Home” page?",
+            "Answer": "You can return to the home page at any time by clicking the back arrow in the top left corner of your screen."
+        },
+        {
+            "Question": "How does the app calculate how much I’ve spent on cigarettes?",
+            "Answer": "Click on the “Settings” page and enter the price you usually spend on a pack of cigarettes and how many cigarettes come in a pack. Then, every time you smoke, the app will automatically keep track of how much each cigarette you smoke is costing you. "
+        },
+        {
+            "Question": "How do I add a daily reminder to not smoke when I wake up?",
+            "Answer": "Click on the “Reminders” page and then click on “Add a reminder.” Enter a name for your reminder (for example, “Remember not to smoke”). Enter the time you want to receive this reminder (for example, 8:00am). Then, you may select if you want to repeat this reminder daily."
+        },
+        {
+            "Question": "Do you have any suggestions for helpful reminders I should add?",
+            "Answer": "Think about what kind of reminders will help you stop smoking. For example, if you struggle with certain triggers, you could add reminders to not smoke after a meal or before bed. If you need some extra motivation, add a reminder saying, “You can do this” or “I’m doing this for my loved ones.”"
+        },
+        {
+            "Question": "How do I edit or delete a reminder?",
+            "Answer": "Click on the “Reminders” page. Here, you will see all the of the reminders that you have entered. To delete a reminder, click on the trash can icon to the right of the reminder. To edit a reminder, click on the edit icon, which is located next to the trash can icon."
+        },
+        {
+            "Question": "How does the chat function work?",
+            "Answer": "Whenever you have a question about smoking, need advice, or just want someone to talk to, use the “Chat” function. The “Chat” function will connect you with a study coordinator who is there to help and support you."
+        },
+        {
+            "Question": "Where can I find facts and tips about quitting smoking?",
+            "Answer": "If you click on the “Tips” page, you will find information about the health and financial impacts of smoking, strategies and suggestions to help you quit, and other resources for your quit journey. "
+        },
+        {
+            "Question": "How do I connect my watch to the app?",
+            "Answer": "A study coordinator will help you connect your watch to the app. In order for the app to detect that you may be smoking a cigarette, make sure the “Watch motion tracking” button in the “Settings” page of the app is turned on. "
+        },
+        {
+            "Question": "I just got an urge to smoke. What do I do?",
+            "Answer": "The app has plenty of resources to distract you from an urge to smoke. Try clicking on the “Games” page where you can play a game of Pac-Man to distract your hands and your mind. Alternatively, you can click on the “Tips” page to get help managing urges. You can also watch one of the app’s meditation videos, music videos, or testimonials from former smokers by clicking on any link in the “Tips” page."
+        },
+        {
+            "Question": "How do I connect the app to the smartwatch if it becomes disconnected?",
+            "Answer": "Please feel free to give the study team a call at (212) 305-8198 and they will guide you through re-connecting the smartwatch. Below are the instructions on how to re-connect the device. \n\nOption 1 – Use a third-party app on the android phone\n    1 Download WearOS app in the Google app store\n    2 Follow the instructions on the smartwatch\n    3 Register the smartwatch to your phone\n    4 Once the watch is registered, go to Settings > System > About in your smarwatch and tap on the build number seven times\n             5 A new Developer Options menu item will appear\n    6 Go to > Developer Options > enable ADB Debugging\n    7 Enable Debug over Wifi\n    8 An IP address will be shown under the Debug over Wifi option (if not, please make sure the smartwatch is connected to Wifi and has enough percentage of battery left; the IP address          should look like 192.168.x.x:5555 in most cases)\n\nOption 2 – install wear.apk via Android device\n    1 Copy the .apk file into          the phone\n    2 Place .apk file in the download folder in the internal storage (otherwise you won’t be able to install it)\n    3 Go to the play store and install the app called “Wear Installer”\n        3.a You need to install this app for both your watch and Android using the google play store (this is an early access app, so it may contain bugs)"
+        }
+    ]
+}

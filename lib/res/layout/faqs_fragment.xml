@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorLightBlue"
+    android:layout_height="match_parent">
+    <View
+        android:id = "@+id/bkground_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/colorBlue1"
+        android:paddingTop="2dp"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id = "@+id/bkgroundline_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        app:layout_constraintBottom_toBottomOf = "@id/bkground_tips"
+        android:background="@color/colorBlue2"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/setting_ic"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/icon_faq_main"
+        app:layout_constraintRight_toLeftOf="@+id/tips_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tips_icon"
+        app:layout_constraintTop_toBottomOf="@+id/space_img_t"/>
+    <Space
+        android:id="@+id/space_img"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Space
+        android:id="@+id/space_img_t"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:id="@+id/space_img1"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space_right"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        app:layout_constraintRight_toRightOf="parent" />
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tips_text"
+        app:layout_constraintRight_toLeftOf="@id/space_right"
+        app:srcCompat="@drawable/logo_header" />
+
+    <TextView
+        android:id="@+id/tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" FAQs"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintLeft_toRightOf="@+id/tips_icon"
+        app:layout_constraintTop_toBottomOf="@+id/space_img_t"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tips_icon"/>
+
+    <ImageView
+        android:id="@+id/home_ic"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/home"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/space_right"
+        app:layout_constraintBottom_toBottomOf="@+id/tips_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tips_icon"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/space1"
+        app:layout_constraintLeft_toRightOf ="@+id/space_img"
+        app:layout_constraintRight_toLeftOf="@+id/space_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/faq1_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Where can I see stats about how much I’ve smoked and how much I’ve spent on cigarettes?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/faq1_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq1_t"
+                tools:ignore="MissingConstraints" />
+
+            <Space
+                android:id="@+id/spacef1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq1_c"/>
+
+            <TextView
+                android:id="@+id/faq2_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do I view the smoking graph to see how many cigarettes I’ve smoked this week?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef1"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/faq2_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/faq2_t"
+                tools:ignore="MissingConstraints" />
+            <Space
+                android:id="@+id/spacef2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq2_c"/>
+
+
+
+
+            <TextView
+                android:id="@+id/faq3_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do I save my progress in the app?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef2"
+                />
+            <TextView
+                android:id="@+id/faq3_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/faq3_t"
+                tools:ignore="MissingConstraints" />
+            <Space
+                android:id="@+id/spacef3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq3_c"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/faq4_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do I return to the “Home” page?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef3"
+                />
+            <TextView
+                android:id="@+id/faq4_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq4_t"
+                tools:ignore="MissingConstraints" />
+            <Space
+                android:id="@+id/spacef4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq4_c"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/faq5_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How does the app calculate how much I’ve spent on cigarettes?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef4"
+                />
+            <TextView
+                android:id="@+id/faq5_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq5_t"
+                tools:ignore="MissingConstraints" />
+
+            <Space
+                android:id="@+id/spacef5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq5_c"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/faq6_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do I add a daily reminder to not smoke when I wake up?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef5"
+                />
+            <TextView
+                android:id="@+id/faq6_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq6_t"
+                tools:ignore="MissingConstraints" />
+
+
+
+
+            <Space
+                android:id="@+id/spacef6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq6_c"/>
+
+            <TextView
+                android:id="@+id/faq7_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have any suggestions for helpful reminders I should add?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef6"
+                />
+            <TextView
+                android:id="@+id/faq7_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq7_t"
+                tools:ignore="MissingConstraints" />
+
+
+
+
+
+            <Space
+                android:id="@+id/spacef7"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq7_c"/>
+
+            <TextView
+                android:id="@+id/faq8_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do I edit or delete a reminder?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef7"
+                />
+            <TextView
+                android:id="@+id/faq8_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq8_t"
+                tools:ignore="MissingConstraints" />
+
+
+
+
+            <Space
+                android:id="@+id/spacef8"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq8_c"/>
+
+            <TextView
+                android:id="@+id/faq9_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How does the chat function work?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef8"
+                />
+            <TextView
+                android:id="@+id/faq9_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq9_t"
+                tools:ignore="MissingConstraints" />
+
+
+            <Space
+                android:id="@+id/spacef9"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq9_c"/>
+
+            <TextView
+                android:id="@+id/faq10_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Where can I find facts and tips about quitting smoking?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef9"
+                />
+            <TextView
+                android:id="@+id/faq10_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq10_t"
+                tools:ignore="MissingConstraints" />
+
+
+            <Space
+                android:id="@+id/spacef10"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq10_c"/>
+
+            <TextView
+                android:id="@+id/faq11_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do I connect my watch to the app?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef10"
+                />
+            <TextView
+                android:id="@+id/faq11_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq11_t"
+                tools:ignore="MissingConstraints" />
+
+
+
+            <Space
+                android:id="@+id/spacef11"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq11_c"/>
+
+            <TextView
+                android:id="@+id/faq12_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I just got an urge to smoke. What do I do?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef11"
+                />
+            <TextView
+                android:id="@+id/faq12_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/faq12_t"
+                tools:ignore="MissingConstraints" />
+
+            <Space
+                android:id="@+id/spacef12"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/faq12_c"/>
+
+            <TextView
+                android:id="@+id/faq13_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do I connect the app to the smartwatch if it becomes disconnected?"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:drawableEnd = "@drawable/downarrow"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorBlue1"
+                app:layout_constraintTop_toBottomOf="@+id/spacef12"
+                />
+            <TextView
+                android:id="@+id/faq13_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/faq13_t"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/tips_icon"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/backarr"
+        app:layout_constraintTop_toBottomOf="@+id/space_img1"
+        app:layout_constraintLeft_toRightOf="@id/space_img" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

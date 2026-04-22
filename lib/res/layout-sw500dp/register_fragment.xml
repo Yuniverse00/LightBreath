@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_background"
+    tools:context=".ui.main.LoginFragment">
+
+    <ImageView
+        android:id="@+id/general_icon"
+        android:layout_width="204dp"
+        android:layout_height="204dp"
+        android:layout_above="@+id/tv_logo"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom"
+        android:clipChildren="true"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_name_title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@color/colorOrange1"
+        android:textSize="61.2sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/et_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="8dp"
+        android:text="User name :"
+        android:textSize="30.6sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="13.6dp"
+        android:layout_above="@id/et_email_title"
+        android:padding="25.5dp"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        android:textSize="25.5sp" />
+
+    <TextView
+        android:id="@+id/et_email_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_email"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="8dp"
+        android:text="Email address :"
+        android:textSize="30.6sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/user_email"
+        android:inputType="textPersonName"
+        android:padding="25.5dp"
+        android:textSize="25.5sp" />
+
+    <TextView
+        android:id="@+id/et_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="8dp"
+        android:text="Password :"
+        android:textSize="30.6sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password_title"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="25.5dp"
+        android:textSize="25.5sp" />
+
+    <TextView
+        android:id="@+id/et_repassword_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="8dp"
+        android:text="Re-type password :"
+        android:textSize="30.6sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/re_type_password"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_below="@+id/et_repassword_title"
+        android:padding="25.5dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPassword"
+        android:background="@drawable/et_custom"
+        android:textSize="25.5sp" />
+
+    <!--
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/swipeLeft"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10.2dp"
+        android:onClick="go_to_login"
+        android:src="@drawable/ic_arrow_left" />
+        -->
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_repassword"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/btn_custom1"
+        android:text="@string/register"
+        android:textSize="25.5sp" />
+
+    <TextView
+        android:id="@+id/swipeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="go_to_login"
+        android:text="@string/Cancel"
+        android:textColor="@color/colorOrange1"
+        android:textSize="25.5sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

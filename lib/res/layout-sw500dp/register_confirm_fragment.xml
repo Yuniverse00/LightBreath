@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_background"
+    tools:context=".ui.main.LoginFragment">
+
+        <ImageView
+            android:id="@+id/general_icon"
+            android:layout_width="323dp"
+            android:layout_height="323dp"
+            android:layout_centerInParent="true"
+            android:layout_above="@id/tv_title"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_confirm"
+            android:textAlignment="center"
+            android:textSize="61.2sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrange1"
+            android:layout_above="@+id/tv_subtitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="42.5dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="17dp" />
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_confirm_title"
+            android:layout_marginStart="85dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginBottom="68dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/confirmation_hint"
+            android:textAlignment="center"
+            android:textSize="27.2sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_confirm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/et_confirmation"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="8.5dp"
+            android:text="Confirmation code :"
+            android:textSize="30.6sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/et_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/confirmation_code"
+            android:inputType="textPersonName"
+            android:padding="25.5dp"
+            android:textSize="25.5sp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_confirmation"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="68dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_custom1"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="user_confirm_register"
+            android:text="@string/confirm_register"
+            android:textColor="@android:color/black"
+            android:textSize="43.35sp" />
+
+        <!--
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/swipeLeft"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.2dp"
+            android:onClick="go_to_register"
+            android:src="@drawable/ic_arrow_left" />
+            -->
+
+        <TextView
+            android:id="@+id/swipeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_confirm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="go_to_register"
+            android:text="@string/back_to_register"
+            android:textSize="30.6sp"
+            android:textStyle="bold" />
+
+</RelativeLayout>

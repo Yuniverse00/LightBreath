@@ -1,0 +1,56 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+# input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type UserInfo @model @auth(rules: [{ allow: owner }, { allow: private, groups: ["Admin"] }])  {
+  username: String!
+  timestamp: String!
+  price: Float!
+  count: Int!
+  time: Int!
+}
+
+type SensorData @model @auth(rules: [{ allow: owner }, { allow: private, groups: ["Admin"] }]){
+  id: ID!
+  username: String!
+  activity: String!
+  time: String!
+  data: [DataPoint!]!
+}
+
+type DataPoint {
+  sensorType: String!
+  value1: Float!
+  value2: Float!
+  value3: Float!
+  time: String!
+}
+
+type UserSmokingReport @model @auth(rules: [{ allow: owner }, { allow: private, groups: ["Admin"] }])  {
+  username: String!
+  timestamp: String!
+  status: SmokingStatus!
+}
+
+enum SmokingStatus {
+  Start
+  End
+}
+
+type Message @model @auth(rules: [{ allow: private }]) {
+  id: ID!
+  content: String!
+  date: String!
+  senduser: String!
+  sendername: String!
+  receiveuser: String!
+  readed: String!
+  likes: Int
+  postType: String
+  parentId: ID
+}
+
+type LastUsed @model  @auth(rules: [{ allow: owner },{ allow: private }]){
+  username: String!
+  timestamp: String!
+}

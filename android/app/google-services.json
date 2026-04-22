@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "978208024828",
+    "project_id": "sense2quit-66b84",
+    "storage_bucket": "sense2quit-66b84.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978208024828:android:c8ff4d717bc5a269b74f79",
+        "android_client_info": {
+          "package_name": "com.github.sense2quit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVYjKL5F69O9UsLrAeOEnZCWRtTWLfaXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

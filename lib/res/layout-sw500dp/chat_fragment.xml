@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.ChatFragment">
+
+    <RelativeLayout
+        android:id="@id/message"
+        android:layout_width="match_parent"
+        android:layout_height="64.5dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginRight="7.5dp"
+        android:layout_marginBottom="7.5dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/txtMessageContent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/btnSendMessage"
+            android:background="@color/colorWhite"
+            android:hint="Enter your message"
+            android:textSize="25.5sp" />
+
+        <ImageView
+            android:id="@+id/btnSendMessage"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/send_icon1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <View
+            android:id="@+id/bkground_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:background="@color/colorBlue1"
+            android:paddingTop="3dp"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/bkgroundline_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_below="@id/bkground_chat"
+            android:background="@color/colorBlue2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="187.5dp"
+            android:layout_marginTop="20.5dp"
+            android:layout_toRightOf="@id/chat_img"
+            android:text="@string/Chat"
+            android:textColor="@color/colorWhite"
+            android:textSize="38.25sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:id="@+id/space_right"
+            android:layout_width="22.5dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_toLeftOf="@+id/space_right"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/logo_header" />
+
+        <ImageView
+            android:id="@+id/chat_img"
+            android:layout_width="55.5dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="22.5dp"
+            app:srcCompat="@drawable/backarr"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/stats_ic"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_alignBottom="@id/chat_text"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@+id/chat_img"
+            app:srcCompat="@drawable/chat" />
+
+        <ImageView
+            android:id="@+id/home_ic"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/home" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/message"
+        android:layout_below="@id/header"
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/messageListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnSendMessage"
+            android:background="@color/colorWhite"
+            android:divider="@color/colorWhite"
+            android:dividerHeight="0dp"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll" />
+
+    </ScrollView>
+</RelativeLayout>

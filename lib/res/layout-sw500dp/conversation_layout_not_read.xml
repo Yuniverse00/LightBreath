@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/User_list_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_marginHorizontal="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@drawable/conversation_list"
+        android:minWidth="600dp"
+        android:padding="15dp"
+        android:textSize="30dp"
+        android:text="@string/chat_users"
+        android:textColor="@color/colorYellow"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+{
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-presmoke-test-131049-authRole",
+      "UnauthRoleArn": "arn:aws:iam::140192304289:role/amplify-presmoke-test-131049-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::140192304289:role/amplify-presmoke-test-131049-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-presmoke-test-131049-deployment",
+      "UnauthRoleName": "amplify-presmoke-test-131049-unauthRole",
+      "StackName": "amplify-presmoke-test-131049",
+      "StackId": "arn:aws:cloudformation:us-west-1:140192304289:stack/amplify-presmoke-test-131049/0a2cc400-2a45-11ee-81dd-02ff0df49249",
+      "AmplifyAppId": "d33a0hxiibkclz"
+    },
+    "categories": {
+      "auth": {
+        "presmoke26a5e853": {}
+      },
+      "api": {
+        "presmoke": {}
+      },
+      "storage": {
+        "sensordata": {}
+      }
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-presmoke-dev-15025-authRole",
+      "UnauthRoleArn": "arn:aws:iam::140192304289:role/amplify-presmoke-dev-15025-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::140192304289:role/amplify-presmoke-dev-15025-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-presmoke-dev-15025-deployment",
+      "UnauthRoleName": "amplify-presmoke-dev-15025-unauthRole",
+      "StackName": "amplify-presmoke-dev-15025",
+      "StackId": "arn:aws:cloudformation:us-west-1:140192304289:stack/amplify-presmoke-dev-15025/e5d95700-eba5-11ec-9ecb-023bb656b20b",
+      "AmplifyAppId": "d33a0hxiibkclz"
+    },
+    "categories": {
+      "auth": {
+        "presmoke26a5e853": {}
+      },
+      "api": {
+        "presmoke": {}
+      },
+      "storage": {
+        "sensordata": {}
+      }
+    }
+  },
+  "sensequit": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-presmoke-sensequit-51962-authRole",
+      "UnauthRoleArn": "arn:aws:iam::443870713866:role/amplify-presmoke-sensequit-51962-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::443870713866:role/amplify-presmoke-sensequit-51962-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-presmoke-sensequit-51962-deployment",
+      "UnauthRoleName": "amplify-presmoke-sensequit-51962-unauthRole",
+      "StackName": "amplify-presmoke-sensequit-51962",
+      "StackId": "arn:aws:cloudformation:us-west-1:443870713866:stack/amplify-presmoke-sensequit-51962/a0911650-a38b-11f0-adb2-0670ae0b207b",
+      "AmplifyAppId": "d13us7jxaxunsr"
+    },
+    "categories": {
+      "auth": {
+        "presmoke26a5e853": {}
+      },
+      "api": {
+        "presmoke": {}
+      },
+      "storage": {
+        "sensordata": {}
+      }
+    }
+  }
+}

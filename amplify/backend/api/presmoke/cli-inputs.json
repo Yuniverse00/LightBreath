@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "presmoke",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/home/qxy/projects/SAIL_smoking_cessation/PreSmoke_New_developer/amplify/backend/api/presmoke/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authpresmoke26a5e853"
+    },
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "AUTOMERGE"
+      }
+    }
+  }
+}

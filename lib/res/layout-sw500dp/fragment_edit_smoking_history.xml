@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorLightBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/bkground"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:background="@color/colorBlue1"
+        android:paddingTop="3dp"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/bkgroundline"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/bkground"
+        android:background="@color/colorBlue2"
+        tools:ignore="MissingConstraints" />
+
+    <Space
+        android:id="@+id/space_img"
+        android:layout_width="15dp"
+        android:layout_height="1.5dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Space
+        android:id="@+id/space_img1"
+        android:layout_width="1.5dp"
+        android:layout_height="22.5dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space_img_t"
+        android:layout_width="1.5dp"
+        android:layout_height="15dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space_right"
+        android:layout_width="15dp"
+        android:layout_height="1.5dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintRight_toLeftOf="@id/space_right"
+        app:srcCompat="@drawable/logo_header" />
+
+    <ImageView
+        android:id="@+id/stats_icon"
+        android:layout_width="55.5dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/backarr"
+        app:layout_constraintTop_toBottomOf="@+id/space_img1"
+        app:layout_constraintLeft_toRightOf="@id/space_img" />
+
+    <ImageView
+        android:id="@+id/stats_ic"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/stats"
+        android:layout_marginTop="7.5dp"
+        app:layout_constraintRight_toLeftOf="@+id/stats_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stats_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Smoking History"
+        android:textSize="37.5dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintLeft_toRightOf="@+id/stats_icon"
+        app:layout_constraintTop_toBottomOf="@+id/space_img_t"
+        app:layout_constraintBottom_toBottomOf="@+id/stats_icon"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="7.5dp"
+        app:layout_constraintTop_toBottomOf="@+id/bkground" />
+
+    <TextView
+        android:id="@+id/edit_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Edit Smoking History"
+        android:gravity="center"
+        android:textSize="27dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingBottom="7.5dp"
+        android:paddingTop="7.5dp"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorBlue1"
+        app:layout_constraintTop_toBottomOf="@id/space1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/smoking_history_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@+id/edit_history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/edit_history"
+        app:layout_constraintRight_toRightOf="@id/edit_history" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.5dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/smoking_history_cancel" />
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="7.5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/smoking_history_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

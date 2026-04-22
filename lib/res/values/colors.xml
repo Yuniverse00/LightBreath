@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <color name="colorPrimary">#C0C0C0</color>-->
+    <color name="colorPrimaryDark">#A9A9A9</color>
+<!--    <color name="colorAccent">#808080</color>-->
+    <color name="colorControlHighlight">#FFFFFF</color>
+    <color name="colorText">#ff767676</color>
+    <color name="pressed_bg">#9ccc65</color>
+    <color name="selected_bg">#F0EFEF</color>
+
+    <color name="graph_color_1">#4f90c1</color>
+    <color name="graph_color_2">#ff748a</color>
+    <color name="graph_color_3">#FF009688</color>
+    <color name="graph_color_4">#9e80b8</color>
+    <color name="graph_color_5">#FFffc107</color>
+    <color name="graph_color_6">#FF795548</color>
+    <color name="graph_color_7">#FFe51c23</color>
+    <color name="graph_color_8">#FFcddc39</color>
+    <color name="graph_color_9">#FFff9800</color>
+    <color name="graph_color_info">#FF9e9e9e</color>
+    <color name="graph_color_tag">#AA000000</color>
+
+    <color name="colorPrimary">#67CAD3</color>
+    <color name="colorPrimaryRed">#EA0029</color>
+    <color name="colorDarkPrimary">#1AACB7</color>
+    <color name="colorAccent">#546E7A</color>
+    <color name="colorBackground">#33333D</color>
+    <color name="colorDarkBackground">#27272f</color>
+    <color name="colorDarkGreen">#045D56</color>
+    <color name="colorGreen">#1EB980</color>
+    <color name="colorOrange">#FF6859</color>
+    <color name="colorOrange1">#F44336</color>
+    <color name="colorYellow">#FFCF44</color>
+    <color name="colorPurple">#B15DFF</color>
+    <color name="colorBlue">#72DEFF</color>
+    <color name="colorBlue1">#2979FF</color>
+    <color name="colorBlue2">#0000CD</color>
+    <color name="colorLightBlue">#E3EDFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#848489</color>
+    <color name="colorLightGray">#808080</color>
+    <color name="colorError">#D32F2F</color>
+    <color name="colorWarn">#FF6F00</color>
+    <color name="colorLightBackground">#373740</color>
+    <color name="colorTransparent">#00000000</color>
+
+</resources>

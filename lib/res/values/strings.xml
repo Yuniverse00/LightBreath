@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sense2Quit</string>
+
+    <!-- Menu items -->
+    <string name="channel_name">Presmoke</string>
+    <string name="channel_description">Notify User</string>
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="device_connected">CONNECTED</string>
+    <string name="device_disconnected">DISCONNECTED</string>
+    <string name="ble_device_key">askljdgjKLSDGJlKJSgdlkd</string>
+    <string name="agm_key">KLAFDJGkljasdglJASFLDFKSJFLKASDJGK</string>
+    <string name="link_to_site">Medicines are also another good way to help stop smoking. A few common ones are Varenicline, Bupropion, Nortriptyline, and Clonidine. Get more info at the
+<a href="https://www.cancer.org/healthy/stay-away-from-tobacco/guide-quitting-smoking/prescription-drugs-to-help-you-quit-smoking.html">American Cancer Society</a></string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_register"><u>Register</u></string>
+    <string name="forget_password"><u>Forgot Password?</u></string>
+    <string name="login">Log in</string>
+    <string name="login_line" >OR</string>
+
+    <string name="CreateAccount">Create new account: </string>
+
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="user_email">Email Address</string>
+    <string name="tag">Welcome! Join us and quit smoking!</string>
+    <string name="Cancel">Cancel</string>
+    <string name="go_to_login">Back to Login</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="register_confirm">Confirmation</string>
+    <string name="confirmation_hint">Please enter the confirmation code received via email.</string>
+    <string name="confirmation_code">Confirmation Code</string>
+    <string name="confirm_register">Confirm</string>
+    <string name="back_to_register">Back to Register</string>
+    <string name="Game">Game</string>
+    <string name="Chat">Chat</string>
+
+    <!--  Account  -->
+    <string name="Account">Account</string>
+    <string name="Account_username">Username: </string>
+    <string name="Account_save">Save User Changes</string>
+    <string name="Account_price">Price of a pack of cigarettes($):</string>
+    <string name="Account_count">Number of cigarettes per pack:</string>
+    <string name="Account_timeline">Duration of quit time(days):</string>
+
+    <!--  Alarm  -->
+    <string name="Alarm">Alarm</string>
+    <string name="Alarm_addAlarm">Add Alarm</string>
+    <string name="Alarm_deleteAlarm">Delete Reminder</string>
+
+    <!--  Alarm Setting  -->
+    <string name="AlarmSetting">Schedule Alarm</string>
+    <string name="AlarmSetting_time">Reminder Time</string>
+    <string name="AlarmSetting_title">Alarm Title</string>
+    <string name="AlarmSetting_reoccur">Recurring Alarm</string>
+    <string name="AlarmSetting_Mon">Mon</string>
+    <string name="AlarmSetting_Tue">Tue</string>
+    <string name="AlarmSetting_Wed">Wed</string>
+    <string name="AlarmSetting_Thu">Thu</string>
+    <string name="AlarmSetting_Fri">Fri</string>
+    <string name="AlarmSetting_Sat">Sat</string>
+    <string name="AlarmSetting_Sun">Sun</string>
+    <string name="AlarmSetting_schedule">Schedule Alarm</string>
+
+    <!--  Alarm View  -->
+    <string name="AlarmView_time">00:00</string>
+
+    <!--  General  -->
+    <string name="General">Settings</string>
+    <string name="General_autoReport">Watch motion tracking:</string>
+    <string name="General_ChangeMessage">Change Message:</string>
+    <string name="General_ChangeMessageButton">Change</string>
+
+    <!-- Message -->
+    <string name="Message">Choose your message template or direct create your own message.</string>
+    <string name="Message_userMessage">Edit your message:</string>
+
+    <!--  Settings  -->
+    <string name="Settings">User</string>
+
+    <!--  Stats  -->
+    <string name="Stats">Stats</string>
+    <string name="Stats_smokedTotal">Smoked in total</string>
+    <string name="Stats_cashSpent">Cash Spent</string>
+    <string name="Stats_smokedToday">Smoked Today</string>
+    <string name="Stats_timeSinceLast">Time Since Last One</string>
+    <string name="Stats_chartTrend">Daily Trend</string>
+    <string name="Stats_chartCash">Cash Spent</string>
+
+    <!--  Tips  -->
+    <string name="Tips">Tips</string>
+    <string name="Tips_hint">Here are some tips to help you!</string>
+    <string name="Tips_mute">Mute</string>
+    <string name="Tips_unmute">Unmute</string>
+
+    <string name="chat_users">users</string>
+
+    <!--  Game  -->
+    <string name="game_tips"><u>Click here for instructions on how to play</u></string>
+    <string name="game_tips_txt">Use your finger to swipe up, down, to the right or to the left to make the Pac-Man eat the yellow dots. Watch out for the floating cigarettes.
+        If one of them hits your Pac-Man, the round will end. If your Pac-Man eats a blue flashing square, it has the temporary power to eat the floating cigarettes. Press ‘Exit’ to end the game at any time.</string>
+</resources>

@@ -1,0 +1,14 @@
+{
+  "resourceName": "sensordata",
+  "policyUUID": "64e7e565",
+  "bucketName": "sensordataps",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

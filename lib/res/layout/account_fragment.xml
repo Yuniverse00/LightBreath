@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorLightBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id = "@+id/bkground_account"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/colorBlue1"
+        android:paddingTop="2dp"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id = "@+id/bkgroundline_account"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        app:layout_constraintBottom_toBottomOf = "@id/bkground_account"
+        android:background="@color/colorBlue2"
+        tools:ignore="MissingConstraints" />
+    <Space
+        android:id="@+id/space_img"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Space
+        android:id="@+id/space_img1"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:id="@+id/space_img_t"
+        android:layout_width="1dp"
+        android:layout_height="12dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:id="@+id/space_right"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/stats_ic"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/settings"
+        app:layout_constraintRight_toLeftOf="@+id/account_text"
+        app:layout_constraintBottom_toBottomOf="@+id/account_icon"
+        app:layout_constraintTop_toBottomOf="@+id/space_img_t" />
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/account_icon"
+        app:layout_constraintRight_toLeftOf="@id/space_right"
+        app:srcCompat="@drawable/logo_header" />
+    <ImageView
+        android:id="@+id/account_icon"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/backarr"
+        app:layout_constraintTop_toBottomOf="@+id/space_img1"
+        app:layout_constraintLeft_toRightOf="@id/space_img"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintLeft_toRightOf="@+id/account_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/stats_ic"/>
+
+    <ImageView
+        android:id="@+id/home_ic"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/home"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@id/space_right"
+        app:layout_constraintBottom_toBottomOf="@+id/account_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space1_account"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/bkground_account"/>
+
+    <TextView
+        android:id="@+id/username_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, "
+        android:textSize="21dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/space1_account"
+        app:layout_constraintLeft_toRightOf="@+id/stats_ic"/>
+
+    <TextView
+        android:id="@+id/username_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here are your app settings."
+        android:textSize="21dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/username_hint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/space1_account"
+        app:layout_constraintLeft_toRightOf="@id/username_hint"/>
+
+    <Space
+        android:id="@+id/space2_account"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/username_s"/>
+
+    <TextView
+        android:id="@+id/price_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Account_price"
+        android:textSize="18dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/space2_account"
+        app:layout_constraintLeft_toRightOf="@id/space_img"/>
+
+    <EditText
+        android:id="@+id/price_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/et_custom"
+        android:hint="   $0"
+        android:textSize="18dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/price_hint"
+        app:layout_constraintRight_toLeftOf="@id/space_right"
+        tools:ignore="NotSibling" />
+
+            <Space
+                android:id="@+id/space3_account"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/price_input"/>
+
+            <TextView
+                android:id="@+id/count_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Account_count"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/space3_account"
+                app:layout_constraintLeft_toRightOf="@id/space_img"/>
+
+            <EditText
+                android:id="@+id/count_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/et_custom"
+                android:textSize="18dp"
+                android:hint="   0"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@+id/count_hint"
+                app:layout_constraintRight_toLeftOf="@id/space_right"/>
+
+            <Space
+                android:id="@+id/space4_account"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/count_input"/>
+            <TextView
+                android:id="@+id/time_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Account_timeline"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/space4_account"
+                app:layout_constraintLeft_toRightOf="@id/space_img"/>
+
+            <EditText
+                android:id="@+id/time_input"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:visibility="gone"
+                android:textAlignment = "center"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@+id/space4_account"
+                app:layout_constraintRight_toLeftOf="@id/space_right"/>
+
+            <Space
+                android:id="@+id/space5_account"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/time_input"/>
+<!--
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        app:layout_constraintTop_toBottomOf = "@id/space5_account"
+        android:background="@color/colorWhite"
+        tools:ignore="MissingConstraints" />
+-->
+    <TextView
+        android:id="@+id/auto_report_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/General_autoReport"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/account_icon"
+        app:layout_constraintTop_toBottomOf="@+id/space4_account" />
+    <Space
+        android:id="@+id/space6_account"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/auto_report_hint"/>
+    <Button
+        android:id="@+id/change_pwd_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="  Change password  "
+        android:onClick="daily_trend_chart"
+        android:background="@drawable/btn_custom3"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintRight_toLeftOf="@+id/space_right"
+        app:layout_constraintTop_toBottomOf="@+id/auto_report_hint"
+        app:layout_constraintLeft_toLeftOf="@+id/account_icon" />
+
+
+    <TextView
+        android:id="@+id/study_team_number"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="If you have any questions about the Sense2Quit study, please contact the study team at (212) 305-8198."
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toRightOf="@id/space_img"
+        app:layout_constraintRight_toLeftOf="@id/space_right"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <Switch
+        android:id="@+id/auto_report_switch"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/imgswitch"
+        app:layout_constraintTop_toBottomOf="@+id/space5_account"
+        app:layout_constraintBottom_toBottomOf="@+id/space6_account"
+        app:layout_constraintRight_toLeftOf="@+id/space_right"
+        android:thumb="@drawable/empty"
+        android:track="@drawable/empty" />
+
+    <ImageView
+        app:srcCompat="@drawable/alarm_cancel"
+        android:id="@+id/cancel_setting"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="550dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/save_setting" />
+
+    <ImageView
+        app:srcCompat="@drawable/alarm_save"
+        android:id="@+id/save_setting"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save Changes"
+        android:textSize="17dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toTopOf="@id/cancel_setting"
+        app:layout_constraintBottom_toBottomOf="@id/cancel_setting"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cancel_setting" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

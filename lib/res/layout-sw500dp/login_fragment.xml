@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_background"
+    tools:context=".ui.main.LoginFragment">
+
+    <ImageView
+        android:id="@+id/general_icon"
+        android:layout_width="323dp"
+        android:layout_height="323dp"
+        android:layout_above="@id/user_name_txt"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/user_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_user"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="17dp"
+        android:text="Account : "
+        android:textSize="30.6sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/user_password_txt"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/user_name"
+        android:inputType="textEmailAddress"
+        android:padding="26dp"
+        android:textSize="25.5sp" />
+
+    <TextView
+        android:id="@+id/user_password_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_password"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="8dp"
+        android:text="Password :"
+        android:textSize="30.6sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="26dp"
+        android:textSize="25.5sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginRight="136dp"
+        android:background="@drawable/btn_custom1"
+        android:text="@string/login"
+        android:textColor="@android:color/black"
+        android:textSize="25.5sp" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
+        android:text="@string/login_line"
+        android:textSize="25.5sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="85dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="170dp"
+        android:layout_toEndOf="@id/line"
+        android:background="@android:color/darker_gray"
+        android:paddingTop="2dp" />
+
+    <View
+        android:layout_width="85dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="170dp"
+        android:layout_toStartOf="@id/line"
+        android:background="@android:color/darker_gray"
+        android:paddingTop="2dp" />
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:text="Create new account :"
+        android:textSize="30.6sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/swipeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="go_to_register"
+        android:text="@string/go_to_register"
+        android:textColor="@color/colorOrange1"
+        android:textSize="25.5sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="go_to_forget_password"
+        android:text="@string/forget_password"
+        android:textColor="@color/colorOrange1"
+        android:textSize="25.5sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

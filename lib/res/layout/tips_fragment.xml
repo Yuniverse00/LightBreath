@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorLightBlue"
+    android:layout_height="match_parent">
+    <View
+        android:id = "@+id/bkground_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/colorBlue1"
+        android:paddingTop="2dp"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id = "@+id/bkgroundline_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        app:layout_constraintBottom_toBottomOf = "@id/bkground_tips"
+        android:background="@color/colorBlue2"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/setting_ic"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/tips"
+        app:layout_constraintRight_toLeftOf="@+id/tips_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tips_icon"
+        app:layout_constraintTop_toBottomOf="@+id/space_img_t"/>
+    <Space
+        android:id="@+id/space_img"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Space
+        android:id="@+id/space_img_t"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:id="@+id/space_img1"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space_right"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        app:layout_constraintRight_toRightOf="parent" />
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tips_text"
+        app:layout_constraintRight_toLeftOf="@id/space_right"
+        app:srcCompat="@drawable/logo_header" />
+    <ImageView
+        android:id="@+id/tips_icon"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/backarr"
+        app:layout_constraintTop_toBottomOf="@+id/space_img1"
+        app:layout_constraintLeft_toRightOf="@id/space_img"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintLeft_toRightOf="@+id/tips_icon"
+        app:layout_constraintTop_toBottomOf="@+id/space_img_t"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tips_icon"/>
+
+    <ImageView
+        android:id="@+id/home_ic"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/home"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/space_right"
+        app:layout_constraintBottom_toBottomOf="@+id/tips_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tips_icon"/>
+    <TextView
+        android:id="@+id/tips_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Tips_hint"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/space1" />
+
+    <LinearLayout
+        android:id="@+id/media_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintTop_toBottomOf="@+id/tips_hint"
+        android:layout_alignParentTop="true">
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:videoId="d6iS44aHy4s"
+            app:enableAutomaticInitialization="false"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mute_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/media_layout"
+        app:srcCompat="@drawable/mute"
+        />
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/media_layout"
+        app:srcCompat="@drawable/play2"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/more_video"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="More Videos"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:drawableEnd = "@drawable/downarrow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="@color/colorBlue1"
+        app:layout_constraintTop_toBottomOf="@id/mute_button" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/youtube_recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@+id/more_video"
+        app:layout_constraintBottom_toTopOf="@id/tips_a"
+        />
+
+    <TextView
+        android:id="@+id/tips_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Tip"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:drawableEnd = "@drawable/uparrow"
+        android:background="@color/colorBlue1"
+        app:layout_constraintTop_toBottomOf="@id/youtube_recylerView"
+        app:layout_constraintBottom_toTopOf="@id/tips_recylerView" />
+    <TextView
+        android:id="@+id/tips_recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@id/tips_a"
+        app:layout_constraintBottom_toTopOf="@id/tips_b"
+        />
+    <TextView
+        android:id="@+id/tips_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tips"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:drawableEnd = "@drawable/downarrow"
+        android:background="@color/colorBlue1"
+        app:layout_constraintTop_toBottomOf="@id/tips_recylerView"
+        app:layout_constraintBottom_toTopOf="@id/all_tips_recylerView" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/all_tips_recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@id/tips_b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
