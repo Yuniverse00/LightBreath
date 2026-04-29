@@ -87,7 +87,7 @@ fvm config --cache-path C:\Flutter\Fvm
 
 ---
 
-### 3.（国内网络推荐）配置 Flutter 镜像源 | Configure Flutter Mirrors (China)
+### 3.（国内网络推荐）配置 Flutter 镜像源 | Configure Flutter Mirrors (in China)
 
 ```powershell
 fvm config --flutter-url https://gitee.com/mirrors/Flutter.git
